@@ -42,7 +42,7 @@ const Row = ({ data, onDelete, checked, onRowCheck, updateRow }) => {
   };
 
   return (
-    <tr key={data.id}>
+    <tr key={data.id} className={selected ? classes.selected : ""}>
       <td>
         <input
           name={data.id}
