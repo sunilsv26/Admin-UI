@@ -1,0 +1,95 @@
+/* Search Bar */
+.search {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid;
+  border-color: #b4b4b4;
+  outline: none;
+}
+
+/* Table Styles */
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  white-space: nowrap;
+  border-collapse: collapse;
+}
+table,
+td,
+th {
+  border-bottom: 1px solid #b4b4b4;
+}
+th,
+td {
+  padding: 8px 12px;
+}
+td .actionCell {
+  display: flex;
+  column-gap: 12px;
+  width: 120px;
+}
+td .actionCell img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+td input {
+  padding: 4px 8px;
+  border: 1px solid;
+  border-color: #b4b4b4;
+  outline: none;
+}
+
+/* Footer Styles */
+.table_footer {
+  display: flex;
+  column-gap: 5rem;
+  width: 100%;
+  flex-wrap: wrap;
+  row-gap: 12px;
+}
+.deleteBtn {
+  background-color: red;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 4px 8px;
+  border: none;
+}
+.deleteBtn:disabled {
+  cursor: no-drop;
+  background-color: #f0f0f0;
+  color: #b4b4b4;
+}
+
+.paginator {
+  display: flex;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  row-gap: 12px;
+}
+
+.paginatorBtn {
+  border-radius: 50%;
+  display: inline-block;
+  border: none;
+  padding: 4px 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.paginatorBtn:disabled {
+  cursor: no-drop;
+}
+
+.paginatorBtn.activePage {
+  background-color: white;
+  border: 1px solid blue;
+}

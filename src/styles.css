@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, "Lucida Sans Unicode",
+    Geneva, Verdana, sans-serif;
+}
+.App {
+  text-align: center;
+  widows: 100%;
+  padding: 1rem;
+}
