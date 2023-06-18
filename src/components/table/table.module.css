@@ -47,7 +47,10 @@ td input {
   border-color: #b4b4b4;
   outline: none;
 }
-
+tr.selected {
+  background-color: #c3c3c3;
+  color: white;
+}
 /* Footer Styles */
 .table_footer {
   display: flex;
