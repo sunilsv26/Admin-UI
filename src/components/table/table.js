@@ -134,12 +134,12 @@ const Table = ({ headers, data, edit, pagination, perPage }) => {
     if (val) {
       const serachResults = allData.filter((row) => {
         return Object.values(row).some((value) => {
-          if (value.includes(val)) {
+          const lowercase = value.toLowerCase();
+          if (lowercase.includes(val.toLowerCase())) {
             return row;
           }
         });
       });
-      console.log(serachResults);
       setSearchResult(serachResults);
       iniializeTable({
         data: serachResults,
